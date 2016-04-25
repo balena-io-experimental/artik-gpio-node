@@ -1,6 +1,6 @@
 # Basic GPIO with node.js
 
-This is a basic example of GPIO control on the Artik 5 & 10 using the [pi-pins])(https://www.npmjs.com/) module from npm
+This is a basic example of GPIO control on the Artik 5 & 10 using the [pi-pins](https://www.npmjs.com/) module from npm
 
 In this example we will blink an LED on pin 22.
 
