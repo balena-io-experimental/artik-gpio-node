@@ -2,7 +2,7 @@
 
 This is a basic example of GPIO control on the Artik 5 & 10 using the [pi-pins](https://www.npmjs.com/) module from npm
 
-In this example we will blink an LED on pin 22.
+In this example we will blink an LED on pin 22 (for Artik 10) or pin 135 (for Artik 5). For pin-mapping consult [Artik documentation](https://developer.artik.io/documentation/developer-guide/gpio-mapping.html)
 
 All you need to do is :
 

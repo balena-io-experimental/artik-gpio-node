@@ -1,14 +1,9 @@
-//provision the gpio pins 22 for the led output and 17 for the button input
+// var pinNum = 135; for Artik 5
+var pinNum = 22; // for Artik 10
 
-pinNum =
+var led = require("pi-pins").connect(pinNum),
 
-// for Artik 5
-// var pinNum = 135;
-
-var led = require("pi-pins").connect(22),
-
-//set the pin mode,  setting pin 22 as an output and 17 as an input
-button.mode('in');
+// set the pin mode: LED as ouput
 led.mode('out');
 
 // blink the LED
