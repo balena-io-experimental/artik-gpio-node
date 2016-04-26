@@ -8,7 +8,7 @@ led.mode('out');
 
 // blink the LED
 setInterval(function () {
-  if (pin.value()) {
+  if (led.value()) {
     led.value(false);
   } else {
     led.value(true);
