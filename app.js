@@ -1,16 +1,9 @@
-// var pinNum = 135; for Artik 5
-var pinNum = 22; // for Artik 10
+"use strict";
 
-var led = require("pi-pins").connect(pinNum);
+var _artikIo = require("artik-io");
 
-// set the pin mode: LED as ouput
-led.mode('out');
-
-// blink the LED
-setInterval(function () {
-  if (led.value()) {
-    led.value(false);
-  } else {
-    led.value(true);
-  }
-}, 10);
+var gpio = new _artikIo.Gpio(_artikIo.Gpio.pins.ARTIK_10[22]);
+gpio.pinMode(_artikIo.Gpio.direction.INPUT);
+gpio.on(_artikIo.Gpio.event.RISING, function () {
+    console.info("sensor is on");
+});
