@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "main": "app.js",
   "dependencies": {
-    "pi-pins": "~1.0.2"
+    "artik-io": "^1.0.1"
   },
   "devDependencies": {},
   "scripts": {
